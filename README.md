@@ -20,6 +20,7 @@ A teraz parę słów o projekcie.
 - strona została również udostępniona w serwisie VERCEL https://rest-countries-neon-mu.vercel.app/ , jest aktulizowana za każdym razem kiedy wygryje zmiane w branchu np. po każdym commicie
 - została dodana strona typu 404
 - logo przenosi nas na stornę główną
-- 
+
 Wydaje mi się, że to wszystko, ale myslę, że dodałem jeszcze coś czego nie wymieniłem.
+
 Na wszelkie pytania chętnie odpowiem. Do usłyszenia ;)
