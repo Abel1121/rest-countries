@@ -1,27 +1,22 @@
-# RestCountries
+# rest-countries
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+This is my interview project, I spent about 4/5 hours on it
 
-## Development server
+Witam, jestem autorem tego projektu, zajęło mi to około 4/5h. Został zrobiony w celu zaliczenia projektu rekrutacyjnego.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+A teraz parę słów o projekcie.
 
-## Code scaffolding
+- Cały projket znajduje się na branchu `Master`
+- Został stworzony interceptor do wychwytawania błędów z BE i został podpięty do niego modal
+- W projekcie zostały wykorzystane routery
+- Można przejść na wybrany kraj/region wpisując z palca region/** lub country/poland
+- Wszystkie informacje są za każdym razem pobierane z BE, żadne informacje o krajach nie są na sztywno zapisane
+- Przycisk cofnij działa na routerach jeśli wpiszemy z ręki country/poland cofnie nas do region/europe, specjalnie nie
+  wykorzystałem przeglądarkowego `back` lub `previous page`
+- przy typowaniu w projekcie nie został wykorzystany ani jeden any
+- zostały wykorzystane serwisy i subjecty, behaviorSubjecty, subscriby oraz pipe jak async lub number do zaokrąglenia
+  ludności danego kraju
+- aplikacja jest posortowana/pogrupowana i przygotowana pod większy projekt
+- strona została również udostępniona w serwisie VERCEL https://rest-countries-neon-mu.vercel.app/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Wydaje mi się, że to wszystko, ale myslę, że dodałem jeszcze coś czego nie wymieniłem. 

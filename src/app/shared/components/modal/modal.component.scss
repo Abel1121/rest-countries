@@ -14,13 +14,12 @@
 
 .modal {
   background-color: white;
-  width: 20vw;
-  min-height: fit-content;
+  width: 330px;
   border-radius: 10px;
   position: absolute;
   z-index: 3;
   top: calc(50% - 10vw);
-  left: calc(50% - 10vh);
+  left: calc(50% - 165px);
   display: flex;
   flex-direction: column;
 
