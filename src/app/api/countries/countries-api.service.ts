@@ -24,9 +24,14 @@ export class CountriesApiService {
       .pipe(tap(() => this.backTo.next(`dashboard`)));
   }
 
-  getCountry(country: string): Observable<Country> {
+  getCountry(country: string): Observable<Country[]> {
     return this.http
-      .get<Country>(`${commonEnviroment.apiEndpoints.COUNTRY}/${country}`)
-      .pipe(tap((item) => this.backTo.next(`/region/${item[0].region}`)));
+      .get<Country[]>(`${commonEnviroment.apiEndpoints.COUNTRY}/${country}`)
+      .pipe(
+        tap((item) => {
+          console.log(item, 'item');
+          this.backTo.next(`/region/${item[0].region}`);
+        })
+      );
   }
 }

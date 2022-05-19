@@ -12,8 +12,8 @@ import { Country } from '../../../api/countries/models/Country';
 export class CountryComponent implements OnInit {
   country: string;
   countryDetails: Country;
-  currencies = [];
-  countryDetails$: Observable<Country>;
+  currencies: string[] = [];
+  countryDetails$: Observable<Country[]>;
 
   constructor(
     private route: ActivatedRoute,
