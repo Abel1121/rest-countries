@@ -3,15 +3,16 @@
   <div *ngIf="countryDetails$ | async else loading" class="country flex flex-column">
     <div class="country-flagWithShortName flex">
       <img class="country-flag" src="{{countryDetails.flags.svg}}" alt="flag"/>
-      <span class="country-fifa title">{{countryDetails.fifa}}</span>
+      <span class="country-fifa title">{{countryDetails.fifa?.length ? countryDetails.fifa : 'N/A'}}</span>
     </div>
     <div class="country-desc">
       <div class="country-desc-container">
-        <span class="country-desc-container-item">Stolica: {{countryDetails.capital}}</span>
+        <span
+          class="country-desc-container-item">Stolica: {{countryDetails.capital?.length ? countryDetails.capital : 'Brak informacji'}}</span>
       </div>
       <div class="country-desc-container">
-        <span class="country-desc-container-item">{{this.currencies.length === 1 ? 'Waluta' : 'Waluty'}}
-          : {{this.currencies}}</span>
+        <span class="country-desc-container-item">{{this.currencies?.length === (1 || 0) ? 'Waluta' : 'Waluty'}}
+          : {{this.currencies?.length ? this.currencies : 'Brak informacji'}}</span>
       </div>
       <div class="country-desc-container">
         <span class="country-desc-container-item">Populacja: {{countryDetails.population / 1000000 | number: '1.0-00'}}
@@ -19,7 +20,7 @@
       </div>
       <div class="country-desc-container">
         <span class="country-desc-container-item">{{countryDetails.tld.length === 1 ? 'Domena' : 'Domeny'}}
-          : {{countryDetails.tld}}</span>
+          : {{countryDetails.tld.length ? countryDetails.tld : 'Brak informacji'}}</span>
       </div>
       <div class="country-desc-container">
         <span class="country-desc-container-item">Mapy: <a class="first-link" href="{{countryDetails.maps.googleMaps}}"
