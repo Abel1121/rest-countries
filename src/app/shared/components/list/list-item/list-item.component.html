@@ -1,0 +1,6 @@
+<li class="list-item " *ngFor="let regionDetail of regionDetails">
+  <a class="list-item-link flex flex-align-center" href="/country/{{regionDetail.name.common}}">
+    <img class="list-item-flag" src="{{regionDetail.flags.svg}}" alt="{{regionDetail.name.common}} flag"/>
+    <span class="list-item-span w-100">{{regionDetail.name.official}}</span>
+  </a>
+</li>

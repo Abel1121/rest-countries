@@ -1,0 +1,45 @@
+import { PostalCode } from './PostalCode';
+import { CapitalInfo } from './Capitalnfo';
+import { CoatOfArms } from './CoatOfArms';
+import { Flags } from './Flags';
+import { Car } from './Car';
+import { Maps } from './Maps';
+import { Name } from './Name';
+
+export interface Country {
+  name: Name;
+  tld: string[];
+  cca2: string;
+  ccn3: string;
+  cca3: string;
+  cioc: string;
+  independent: boolean;
+  status: string;
+  unMember: boolean;
+  currencies: any;
+  idd: any;
+  capital: string[];
+  altSpellings: string[];
+  region: string;
+  subregion: string;
+  languages: any;
+  translations: any;
+  latlng: number[];
+  landlocked: boolean;
+  borders: string[];
+  area: number;
+  demonyms: any;
+  flag: string;
+  maps: Maps;
+  population: number;
+  gini: any;
+  fifa: string;
+  car: Car;
+  timezones: string[];
+  continents: string[];
+  flags: Flags;
+  coatOfArms: CoatOfArms;
+  startOfWeek: string;
+  capitalInfo: CapitalInfo;
+  postalCode: PostalCode;
+}

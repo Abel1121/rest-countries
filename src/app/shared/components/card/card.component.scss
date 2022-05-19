@@ -1,0 +1,22 @@
+.card {
+  width: 250px;
+  height: 250px;
+  background-color: lightblue;
+  border-radius: 10px;
+  border: 1px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 200ms;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    background-color: lightskyblue;
+  }
+
+  &-span {
+    font-size: 32px;
+  }
+}

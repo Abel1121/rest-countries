@@ -1,0 +1,11 @@
+<section class="homePage flex flex-column flex-align-center">
+  <span class="title">Wybierz region</span>
+  <ng-container *ngIf="regions.length else loading">
+    <div class="cards w-100 h-100 flex flex-align-center">
+      <app-card *ngFor="let region of regions" [region]="region"></app-card>
+    </div>
+  </ng-container>
+  <ng-template #loading>
+    <app-refresh></app-refresh>
+  </ng-template>
+</section>

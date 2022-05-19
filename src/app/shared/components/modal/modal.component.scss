@@ -1,0 +1,40 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  width: 20vw;
+  min-height: fit-content;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 3;
+  top: calc(50% - 10vw);
+  left: calc(50% - 10vh);
+  display: flex;
+  flex-direction: column;
+
+  &-title, &-desc {
+    margin-bottom: 0;
+    padding: 20px;
+    border-bottom: 1px solid black;
+  }
+
+  &-button {
+    margin: 20px;
+  }
+}
+
+.hidden {
+  display: none;
+}

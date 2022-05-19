@@ -1,0 +1,39 @@
+.country {
+  border: 1px solid black;
+  width: 50vw;
+  height: 40vh;
+  justify-content: space-between;
+
+  &-flagWithShortName {
+    height: 40%;
+    padding: 20px;
+    justify-content: space-between;
+
+  }
+
+  &-fifa {
+    font-size: 120px;
+  }
+
+  &-flag {
+    width: 230px;
+    height: 150px;
+  }
+
+  &-title {
+    text-align: left;
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  &-desc {
+    &-container {
+      border-top: 1px solid black;
+      padding: 20px 10px;
+    }
+  }
+}
+
+.first-link {
+  margin-right: 20px;
+}

@@ -1,0 +1,7 @@
+<section class="region w-100 h-100 flex flex-column flex-align-center">
+  <span class="region-title title">Region: {{region}}</span>
+  <app-list *ngIf="regionDetails$ | async else loading" [regionDetails]="regionDetails"></app-list>
+  <ng-template #loading>
+    <app-refresh></app-refresh>
+  </ng-template>
+</section>

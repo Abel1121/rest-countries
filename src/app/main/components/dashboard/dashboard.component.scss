@@ -1,0 +1,11 @@
+.homePage {
+  height: 80vh;
+}
+
+.cards {
+  padding-bottom: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  gap: 16px;
+}

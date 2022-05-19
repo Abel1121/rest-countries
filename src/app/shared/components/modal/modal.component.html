@@ -1,0 +1,9 @@
+<section class="background" [ngStyle]="{'display' : displayNone ? 'none' : 'block'}">
+</section>
+<div class="modal" [ngStyle]="{'display' : displayNone ? 'none' : 'flex'}">
+  <h3 class="title modal-title">{{title}}</h3>
+  <div class="modal-desc">
+    {{description}}
+  </div>
+  <button class="modal-button button" (click)="closeModal()">close</button>
+</div>
