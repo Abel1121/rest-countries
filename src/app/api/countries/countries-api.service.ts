@@ -27,11 +27,6 @@ export class CountriesApiService {
   getCountry(country: string): Observable<Country[]> {
     return this.http
       .get<Country[]>(`${commonEnviroment.apiEndpoints.COUNTRY}/${country}`)
-      .pipe(
-        tap((item) => {
-          console.log(item, 'item');
-          this.backTo.next(`/region/${item[0].region}`);
-        })
-      );
+      .pipe(tap((item) => this.backTo.next(`/region/${item[0].region}`)));
   }
 }
